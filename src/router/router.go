@@ -47,7 +47,7 @@ func New(cc controller.Collector, port, certFile, keyFile string) *router {
 
 		/** User **/
 		{
-			"Generate token",
+			"Generate token", // Implemented for demo to be able make required requests with SSL
 			"GET",
 			"/user/token",
 			cc.UsCnt.GenerateToken,

@@ -12,6 +12,7 @@ import (
 func InitConnectionDb(dbHost, dbUser, dbPassword, dbName string) *gorm.DB {
 	dbDSN := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?charset=utf8&parseTime=True", dbUser, dbPassword, dbHost, dbName)
 	db, _ := gorm.Open("mysql", dbDSN)
+	// Commented for the demo propose
 	/*if err != nil {
 		logger.WithError(err).Fatalf("Cannot connect to database:")
 	}*/
